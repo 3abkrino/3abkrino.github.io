@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register form</title>
+        <link rel="stylesheet" href="Style/forms.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Style/Extended CSS.css">
+
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <header class="head">        
+            <!-- Navbar -->
+                <nav class="navbar">
+                    <div class="nav-logo">
+                        Elhendawey
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"> <a href="index.html"> Home </a></li>
+                        <li class="nav-item"> <a href="gallery.html"> Menu </a></li>
+                        <li class="nav-item"> <a href="about.html"> About </a></li>
+                        <li class="nav-item"> <a href="contactus.html"> Contact us </a></li>
+                        <li class="nav-item "> <a href="register.html"> Register </a></li>
+                        <li class="nav-item"> <a href="login.html"> Login </a></li>
+                        <i class="fa" style='font-size:24px;color:#f9bd4f'> &#xf07a;</i>
+                         <li class="nav-item"> <a href="cart.html"> Shopping Cart </a></li>
+        
+                    </ul>
+                    <div class="clr"></div>
+                </nav>
+                </header>       
+        <div class="container">
+            <div class="register-left">
+        
+                <h1>Join Us</h1>
+        
+            </div>
+        <form id="register-form" class="register-right"  onsubmit="return store()"> 
+            <h2>Register Here</h2>
+            <div class="register-form"></div>
+            <label for="name1">Name:</label>
+            <input id="name1" type="text" placeholder="Mohamed Abdel Aziz" required value=""/>
+            <br>
+            <label for="pw">Password:</label>
+            <input id="pw" type="password" minlength="6" placeholder="Password" required value=""/>
+            <br>
+            <br>
+            
+            <div>
+                <label for="gender">Gender:</label>
+                <label><input type="radio" name="gender">Male
+                    
+                </label>
+                <label><input type="radio" name="gender">Female
+                    
+                </label>
+
+            </div>
+            <br>
+            <div>
+                <label>Email:
+                    <input id="email" type="email" placeholder="your email" required>
+                </label>
+            
+            </div>
+            <br>
+            <div>
+            
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            
+            </div>
+            <br>
+            <div>
+                I agree to the terms and conditions
+                <input type="checkbox" required>
+            </div>
+            <br>
+            <input id="rgstr_btn" class="btn" type="submit" value="submit" />
+        </form>
+        
+    </div>
+    <script type="text/javascript" language="javascript" src="Script/forms.js"></script>
+    <footer class="footer">
+        <p> Copyright <span class="span-word"> &copy; </span> ITI IOT TRACK 2021-2022 </p>
+    </footer>
+    </body>
+</html>
